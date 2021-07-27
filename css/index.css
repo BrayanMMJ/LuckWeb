@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: #1b1b1b;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: inline-flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 7px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.img {
+    background: url('../images/fondo.jpg') no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Titles */
+.center .title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.center .subTitle {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.dscTitle {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 550;
+    margin: 0px 10px;
+    position: absolute;
+    top: 105%;
+    left: 46%;
+}
+
+
+/* Buttons */
+.center .btns {
+    margin-top: 20px;
+}
+
+.center .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.center .dsc-button {
+    height: 55px;
+    color: #fff;
+    text-decoration: none;
+    width: 170px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 13px 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.center .btns button {
+    color: #fff;
+    background: none;
+}
+
+.center .dsc-button {
+    color: #fff;
+    background: none;
+}
+
+.center .dsc-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* ToolTips */
+.tooltip-dsc {
+    position: relative;
+    background: #000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 602px;
+    bottom: -40px;
+    pointer-events: none;
+    display: none;
+}
+
+.tooltip-dsc::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    left: calc(50% - 10px);
+    top: -7px;
+}
+
+.tooltip-seeMore {
+    position: relative;
+    background: #000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 390px;
+    bottom: -40px;
+    pointer-events: none;
+    display: none;
+}
+
+.tooltip-seeMore::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    left: calc(50% - 8px);
+    top: -7px;
+}
+
+.dsc-button:hover .tooltip-dsc {
+    display: inline-block;
+}
+
+.seeMore:hover .tooltip-seeMore {
+    display: inline-block;
+}
+
+.center .btns button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.tooltip-index {
+    position: relative;
+    background: #000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 787px;
+    bottom: -26px;
+    pointer-events: none;
+    display: none;
+}
+
+.tooltip-index::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    left: calc(50% - 8px);
+    top: -7px;
+}
+
+.btnNav:hover .tooltip-index {
+    display: inline-block;
+}
+
+.tooltip-contact {
+    position: relative;
+    background: #000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 924px;
+    bottom: -26px;
+    pointer-events: none;
+    display: none;
+}
+
+.tooltip-contact::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    left: calc(50% - 8px);
+    top: -7px;
+}
+
+#contact:hover .tooltip-contact {
+    display: inline-block;
+}
+
+.tooltip-about {
+    position: relative;
+    background: #000;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    left: 1074px;
+    bottom: -46px;
+    pointer-events: none;
+    display: none;
+}
+
+.tooltip-about::after {
+    content: "";
+    display: block;
+    border-top: 10px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    transform: rotate(180deg);
+    left: calc(50% - 8px);
+    top: -7px;
+}
+
+#about:hover .tooltip-about {
+    display: inline-block;
+}
